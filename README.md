@@ -1,6 +1,8 @@
 # EA Skate Start/Stop Script
 
-A PowerShell script that intelligently toggles between starting and stopping EA Skate while managing an AutoHotkey monitor switching script.
+A PowerShell script that intelligently toggles between starting and stopping EA Skate while managing an AutoHotkey script.
+
+EA's anit-cheat will not allow the game to run if it detects that an AutoHotkey script is running. This script simplifies the launching process for users that use AutoHotkey. 
 
 ## Features
 
@@ -27,6 +29,8 @@ The script uses these default paths:
 
 - **Skate Launcher**: `D:\SteamLibrary\steamapps\common\Skate\EAAntiCheat.GameServiceLauncher.exe`
 - **AutoHotkey Script**: `C:\Users\dup\dev\monitor_switcher\switch.ahk`
+
+Replace these values in your own script to match your setup. 
 
 ## Usage
 
@@ -105,7 +109,3 @@ Starting AutoHotkey script...
 AutoHotkey script started successfully!
 Script completed!
 ```
-
-## Author
-
-Created for managing EA Skate and AutoHotkey monitor switching workflow.
