@@ -33,7 +33,7 @@ function Start-Skate {
     Stop-AutoHotkey
     
     # Start Skate
-    Start-Process -FilePath $skatePath
+    Start-Process "steam://run/3354750//-steam%20"
     Write-Host "EA Skate started successfully!" -ForegroundColor Green
 }
 
