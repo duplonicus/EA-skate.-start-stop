@@ -3,7 +3,7 @@
 # Also manages AutoHotkey script accordingly
 
 # Define paths
-$skatePath = "D:\SteamLibrary\steamapps\common\Skate\EAAntiCheat.GameServiceLauncher.exe -steam"
+$skatePath = "D:\SteamLibrary\steamapps\common\Skate\EAAntiCheat.GameServiceLauncher.exe"
 $ahkPath = "C:\Users\dup\dev\monitor_switcher\switch.ahk"
 
 # Function to check if Skate is running
@@ -33,7 +33,8 @@ function Start-Skate {
     Stop-AutoHotkey
     
     # Start Skate
-    Start-Process -FilePath $skatePath
+
+    Start-Process -FilePath $skatePath -ArgumentList "-steam"
     Write-Host "EA Skate started successfully!" -ForegroundColor Green
 }
 
