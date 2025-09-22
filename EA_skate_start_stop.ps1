@@ -3,7 +3,7 @@
 # Also manages AutoHotkey script accordingly
 
 # Define paths
-$skatePath = "D:\SteamLibrary\steamapps\common\Skate\EAAntiCheat.GameServiceLauncher.exe"
+# $skatePath = "D:\SteamLibrary\steamapps\common\Skate\EAAntiCheat.GameServiceLauncher.exe"
 $ahkPath = "C:\Users\dup\dev\monitor_switcher\switch.ahk"
 
 # Function to check if Skate is running
@@ -24,16 +24,16 @@ function Start-Skate {
     Write-Host "Starting EA Skate..." -ForegroundColor Green
     
     # Check if Skate executable exists
-    if (-not (Test-Path $skatePath)) {
+    <# if (-not (Test-Path $skatePath)) {
         Write-Host "ERROR: Skate executable not found at: $skatePath" -ForegroundColor Red
         return
-    }
+    } #>
     
     # Force close AutoHotkey first
     Stop-AutoHotkey
     
     # Start Skate
-    Start-Process "steam://run/3354750//-steam%20"
+    Start-Process "steam://run/3354750"
     Write-Host "EA Skate started successfully!" -ForegroundColor Green
 }
 
