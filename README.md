@@ -1,5 +1,11 @@
 # EA Skate Start/Stop Script
 
+> **Archived (October 2026). Use [ReSkate](https://github.com/Dingo-Shenanigans/ReSkate) instead.**
+>
+> ReSkate is a fan-made launcher that runs skate. offline, with its own multiplayer servers and mod support. Its maintainers say EA's anti-cheat doesn't load under it, and the anti-cheat is the only reason this script existed.
+>
+> This script still works for the stock game launched through Steam, but it is no longer maintained. I'm not affiliated with ReSkate.
+
 A PowerShell script that intelligently toggles between starting and stopping EA Skate while managing an AutoHotkey script.
 
 EA's anit-cheat will not allow the game to run if it detects that an AutoHotkey script is running. This script simplifies the launching process for users that use AutoHotkey. 
